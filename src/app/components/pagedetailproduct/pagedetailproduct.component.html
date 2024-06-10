@@ -1,0 +1,121 @@
+<app-header></app-header>
+<div class="w-[1440px] mt-[150px] mx-auto">
+    <h2 class="pl-[63px] mb-[50px]">Home/All categories</h2>
+
+
+
+    <body class="">
+        <div class="max-w-7xl mx-auto py-8 px-4">
+            <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col md:flex-row">
+                <!-- Product Image -->
+                <div class="w-full md:w-1/2 flex flex-col items-center">
+                    <div class="border p-4 rounded-lg mb-4">
+                        <img src="{{product?.image}}" alt="Product Image" class="w-[561px] h-[561px]">
+                    </div>
+                    <div class="flex space-x-4">
+                        <div class="border p-2 rounded-lg">
+                            <img src="{{product?.image}}" alt="Thumbnail" class="w-full h-auto">
+                        </div>
+                        <div class="border p-2 rounded-lg">
+                            <img src="{{product?.image}}" alt="Thumbnail" class="w-full h-auto">
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Details -->
+                <div class="w-full md:w-1/2 md:pl-8">
+                    <h1 class="text-2xl font-medium text-[30px] text-[#003F62] mb-2">{{product?.name}}</h1>
+                    <p class="text-xl text-gray-600 mb-4">{{product?.price}}$</p>
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-500">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <p class="ml-2 text-gray-500">No reviews</p>
+                    </div>
+                    <p class="text-gray-800 mb-2">
+                        <span class="font-semibold">Availability:</span>
+                        <span class="text-green-500"> In stock</span>
+                    </p>
+                    <p class="text-red-500 mb-4">{{product?.desc}}</p>
+                    <div class="mb-4">
+                        <p class="text-gray-800 font-semibold mb-1">Color:</p>
+                        <div class="flex items-center space-x-4">
+                            <label class="flex items-center">
+                                <!-- <input type="radio" name="color" class="form-radio text-gray-600"> -->
+                                <span class="ml-2 w-6 h-6 bg-yellow-400 rounded-full border"></span>
+                            </label>
+                            <label class="flex items-center">
+                                <!-- <input type="radio" name="color" class="form-radio text-gray-600"> -->
+                                <span class="ml-2 w-6 h-6 bg-gray-600 rounded-full border"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <p class="text-gray-800 font-semibold mb-1">Size:</p>
+                        <div class="flex space-x-2">
+                            <button class="px-4 py-2 border rounded-lg">30</button>
+                            <button class="px-4 py-2 border rounded-lg">56</button>
+                            <button class="px-4 py-2 border rounded-lg">42</button>
+                            <button class="px-4 py-2 border rounded-lg">48</button>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <p class="text-gray-800 font-semibold mb-1">Quantity:</p>
+                        <div class="flex items-center">
+                            <button class="px-3 py-1 border rounded-l-lg">-</button>
+                            <input type="text" value="1" class="w-12 text-center border-t border-b">
+                            <button class="px-3 py-1 border rounded-r-lg">+</button>
+                        </div>
+                    </div>
+                    <div class="flex space-x-4 mb-4">
+                        <button class=" w-[241px] h-[73px] px-6 py-2 bg-yellow-500 text-white font-semibold rounded-[32px] "cd>Add to cart</button>
+                        <button class="  w-[241px] h-[73px] px-6 py-2 bg-yellow-500 text-white font-semibold rounded-[32px]">Buy it now</button>
+                    </div>
+                    <div class="mb-4">
+                        <p class="text-gray-800 font-semibold">Sku: <span class="text-gray-500">01133-9-9</span></p>
+                    </div>
+                    <div class="mb-4">
+                        <p class="text-gray-800 font-semibold">Category: <span class="text-gray-500">{{product?.category}}</span></p>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-500 hover:text-gray-800"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-500 hover:text-gray-800"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-500 hover:text-gray-800"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-500 hover:text-gray-800"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+
+
+    <div class=" mx-auto flex justify-center gap-[20px] mt-[78px] mb-[35px]">
+        <div class="w-[187px] h-[60px] rounded-[20px] font-medium text-[20px] text-center p-[12px] border-2 border-indigo-600 text-indigo-600" >Description</div>
+        <div class="w-[187px] h-[60px] rounded-[20px] font-medium text-[20px] bg-[#003F62] text-center p-[12px] text-white" >Description</div>
+
+    </div>
+
+
+</div>
+
+<div class="w-[1314px] h-[223px] mx-auto border-2 border-indigo-600 rounded-[20px]">
+    <div class="mt-[42px] ml-[49px]">
+        <h1 class="font-semibold text-[23px] text-[#003F62]">Customer reviews</h1>
+        <p class="mt-[17px] font-regular text-[19px] text-[#4F4F4F] ">No reviews yet</p>
+        <button type="submit" class="w-[196px] h-[40px] bg-[#003F62] text-white mt-[17px]"><a href="" class="underline">Write a review</a></button>
+    </div>
+</div>
+
+<div class=" w-[1440px] mx-auto p-[66px] font-semibold text-[27px] text-[#003F62] mt-[64px] mb-[53px]">
+    Related product
+</div>
+
+
+<div class="w-[1440px] mx-auto flex justify-center gap-[26px] mb-[100px]">
+</div>
+
+<app-footer></app-footer>
+<router-outlet></router-outlet>
+
+
+

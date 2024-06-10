@@ -1,0 +1,43 @@
+<app-dautrang></app-dautrang>
+
+<header class=" fixed top-0 w-full z-50 mb-[350px]">
+
+
+    <div class="max-w-[1440px] mx-auto flex justify-between bg-[#003F62] h-[100px] items-center">
+        <div>
+            <a href=""><img src="/assets/header/logo1.png" alt="" class="w-[140px] h-[39px] ml-[63px]"></a>
+        </div>
+        <form class=" boder boder-current" (submit)="filterProducts(); $event.preventDefault()">
+            <input (input)="onSearchChange($event)" type="text " class="w-[306px] h-[55px] px-9 rounded-s-2xl  text-black" placeholder="Search any things..">
+            <button type="submit" class="w-[132px] h-[56px] bg-[#EDA415] rounded-2xl text-white ml-[-25px]">Search</button>
+        </form>
+        <ul class=" flex gap-10 mr-[90px] color-white">
+            <li class="flex gap-[10px]"><img src="/assets/header/user.png" alt="" routerLink="/register"><a href="" routerLink="/register" class="text-white">Sign-up</a></li>
+            <li class="flex gap-[10px]" *ngIf="userName">
+              <img src="/assets/header/user.png" alt=""/>
+              <a href="" class="text-white">{{ userName }}</a>
+          </li>
+          <li class="flex gap-[10px]" *ngIf="!userName">
+              <img src="/assets/header/Frame 8.png" routerLink="/login" alt="">
+              <a href="/login" class="text-white">Login</a>
+          </li>
+            <li (click)="logout()" class="flex gap-[10px]"><img src="/assets/header/Frame 8.png"   alt=""><a href="" class="text-white">Log-out</a></li>
+            <li class="flex gap-[10px]" ><img src="/assets/header/Frame 7.png" alt=""><a href="" class="text-white">Cart</a></li>
+        </ul>
+    </div>
+
+    <div class="max-w-[1440px] mx-auto flex  bg-[#F4F4F4] h-[72px] items-center">
+        <button type="submit" class="bg-[#EDA415] h-[70px] w-[218px] ml-[63px] my-[1px] text-[16px] font-medium text-white"> Browse Categories</button>
+        <ul class="flex gap-[60px] ml-[98px] text-[16px] font-medium">
+            <li *ngFor="let menu of Menu">
+                <a href="" [routerLink]="menu.path">{{menu.name}}</a>
+            </li>
+            <!-- <li><a href=""></a>Home</li>
+            <li><a href=""></a>Catalog</li> -->
+            <li><a href=""></a>Blog</li>
+            <li><a href=""></a>Pages</li>
+            <li><a href=""></a>About us</li>
+        </ul>
+        <div class="ml-[350px] text-[16px] font-bold text-[#003F62]" type="submit">30 Day Free Return</div>
+    </div>
+</header>

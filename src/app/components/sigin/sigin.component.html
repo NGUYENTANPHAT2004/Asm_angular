@@ -1,0 +1,59 @@
+<h1 class="text-[30px] mt-[30px]  ml-[30px] font-bold">Register</h1>
+
+<form [formGroup]="registerform" class="flex flex-col space-y-4 p-4" (ngSubmit)="onSubmit()">
+    <div>
+      <input 
+        type="text" 
+        placeholder="Họ tên" 
+        formControlName="name" 
+        class="border rounded p-2 w-full"
+      />
+      <span 
+        *ngIf="!registerform.controls.name.valid && (registerform.controls.name.dirty || registerform.controls.name.touched)" 
+        class="text-red-500 text-sm mt-1"
+      >
+        Tên không để trống
+      </span>
+    </div>
+  
+    <div>
+      <input 
+        type="text" 
+        placeholder="Email" 
+        formControlName="email" 
+        class="border rounded p-2 w-full"
+      />
+      <span 
+        *ngIf="!registerform.controls.email.valid && (registerform.controls.email.dirty || registerform.controls.email.touched)" 
+        class="text-red-500 text-sm mt-1"
+      >
+        Sai định dạng email
+      </span>
+    </div>
+  
+    <div>
+      <input 
+        type="password" 
+        placeholder="Mật khẩu" 
+        formControlName="password" 
+        class="border rounded p-2 w-full"
+      />
+      <span 
+        *ngIf="!registerform.controls.password.valid && (registerform.controls.password.dirty || registerform.controls.password.touched)" 
+        class="text-red-500 text-sm mt-1"
+      >
+        Mật khẩu không nhỏ hơn 8 kí tự
+      </span>
+    </div>
+  
+    <button 
+      type="submit" 
+      [disabled]="!registerform.valid" 
+      class="bg-blue-600 text-white p-2 rounded mt-4 disabled:opacity-50 font-bold"
+    >
+      Save
+    </button>
+  </form>
+  <div class="flex ">
+    <h1 class="mx-auto">Bạn đã có tài khoản ? <a href="" class="text-blue-500 underline" routerLink="/login">Login</a></h1>
+  </div>

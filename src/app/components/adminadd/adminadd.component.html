@@ -1,0 +1,54 @@
+
+<h1 class="text-3xl font-bold">Thêm mới sản phẩm</h1>
+<form [formGroup]="productform" (ngSubmit)="onSubmit()" class="max-w-md mx-auto mt-8">
+    <div class="mb-4">
+        <label for="name" class="block text-sm font-medium text-gray-700">Tên sản phẩm</label>
+        <input 
+            type="text" 
+            id="name" 
+            placeholder="Tên sản phẩm" 
+            formControlName="name"
+            class="border border-gray-300 rounded-md p-3 block w-full focus:outline-none focus:ring focus:border-blue-300"
+        >
+        <div *ngIf="productform.controls.name.invalid && (productform.controls.name.dirty || productform.controls.name.touched)"
+             class="text-red-600 text-sm">Tên không được để trống và phải có ít nhất 6 ký tự</div>
+    </div>
+    
+    <div class="mb-4">
+        <label for="image" class="block text-sm font-medium text-gray-700">Ảnh sản phẩm</label>
+        <input 
+            type="text" 
+            id="image" 
+            placeholder="Ảnh sản phẩm" 
+            formControlName="image"
+            class="border border-gray-300 rounded-md p-3 block w-full focus:outline-none focus:ring focus:border-blue-300"
+        >
+    </div>
+    
+    <div class="mb-4">
+        <label for="cat_id" class="block text-sm font-medium text-gray-700">Danh mục sản phẩm</label>
+        <select id="cat_id" formControlName="category" required
+                class="border border-gray-300 rounded-md px-3 py-2 block w-full focus:outline-none focus:ring focus:border-blue-300">
+            <option *ngFor="let category of categories" [value]="category.id">{{ category.name }}</option>
+        </select>
+    </div>
+    
+    <div class="mb-4">
+        <label for="price" class="block text-sm font-medium text-gray-700">Giá sản phẩm</label>
+        <input 
+            type="number" 
+            id="price" 
+            placeholder="Giá sản phẩm" 
+            formControlName="price"
+            class="border border-gray-300 rounded-md p-3 block w-full focus:outline-none focus:ring focus:border-blue-300"
+        >
+    </div>
+    
+    <button 
+        type="submit" 
+        class="bg-blue-500 text-white rounded-md p-3 block w-full" 
+        [disabled]="!productform.valid"
+    >
+        Thêm sản phẩm
+    </button>
+</form>

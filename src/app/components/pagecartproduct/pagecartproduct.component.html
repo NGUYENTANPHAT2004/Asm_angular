@@ -1,0 +1,52 @@
+<app-header></app-header>
+<div class="w-[1440px] mt-[150px] mx-auto">
+    <h2 class="pl-[63px] mb-[50px]">Home/All categories</h2>
+    <div class="bg-gray-100 p-6">
+        <div class="w-[1320px] mx-auto bg-white p-4 rounded-md shadow-lg">
+            <div class="grid grid-cols-3 gap-4">
+                <!-- Product List -->
+                <div class="col-span-2">
+                    <div class="border-b-2 pb-2 mb-2">
+                        <div class="grid grid-cols-4 text-center font-semibold text-sm bg-blue-100 p-2 rounded-md">
+                            <div>Product</div>
+                            <div>Price</div>
+                            <div>Quantity</div>
+                            <div>Subtotal</div>
+                        </div>
+                    </div>
+
+
+                    <app-cartone></app-cartone>
+                    <app-cartone></app-cartone>
+                    
+                    <div class="flex justify-between mt-4">
+                        <button class="w-[295px] h-[73px] bg-yellow-400 text-white px-4 py-2 rounded-[32px]">Continue shopping</button>
+                        <div class="flex gap-4">
+                            <button class=" w-[223px] bg-gray-200 text-gray-800 px-4 py-2 border-2 border-black rounded-[32px]">Update cart</button>
+                            <button class=" w-[223px]  text-[#C33131] border-2 border-red-600 px-4 py-2 rounded-[32px]">Clear cart</button>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="col-span-1 bg-blue-100 p-4 rounded-md">
+                    <h2 class="text-lg font-semibold mb-4">Cart total</h2>
+                    <div class="flex justify-between mb-4">
+                        <span>Subtotal</span>
+                        <span>$23.20</span>
+                    </div>
+                    <input type="text" placeholder="Enter coupon code" class="w-full mb-4 p-2 rounded-md">
+                    <button class="bg-blue-500 text-white w-full mb-4 py-2 rounded-md">Apply</button>
+                    <select class="w-full mb-4 p-2 rounded-md">
+                        <option>County</option>
+                    </select>
+                    <div class="flex justify-between mb-4">
+                        <span>Total amount</span>
+                        <span>$23.20</span>
+                    </div>
+                    <button class="bg-yellow-400 text-white w-full py-2 rounded-[32px]">Proceed to checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

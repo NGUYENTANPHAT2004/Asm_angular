@@ -1,0 +1,37 @@
+<app-header></app-header>
+<router-outlet></router-outlet>
+<div class="mt-[150px] mx-auto">
+    <h2 class="ml-[63px] mb-[50px]">Home/All categories</h2>
+    <div class="bg-white">
+        <div class="max-w-7xl mx-auto py-8 flex">
+            <!-- Sidebar -->
+            <div class="w-1/4 pr-4">
+                <div class="bg-white p-4 rounded shadow max-h-[500px] overflow-y-auto">
+                    <div class="flex items-center justify-between mb-4">
+                        <h1 class="font-medium text-[16px] text-[#003F62]">Categories</h1>
+                        <p href="#" class="font-regular text-[16px] text-blue-500">Reset</p>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex items-center">
+                            <input (click)="fetchProducts()" type="checkbox" class="form-checkbox">
+                            <label class="ml-2 font-regular text-[16px]" for="">All categories</label>
+                            <span class="ml-auto text-gray-500">10</span>
+                        </div>
+                        <div class="flex items-center" *ngFor="let item of categories">
+                            <input (click)="onCategoryChange($event)" type="checkbox" [value]="item.name" class="form-checkbox">
+                            <label class="ml-2 font-regular text-[16px]" for="">{{item.name}}</label>
+                            <span class="ml-auto text-gray-500">5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="w-3/4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <app-productone *ngFor="let product of product" [productone]="product"></app-productone>
+            </div>
+        </div>
+    </div>
+</div>
+<app-bannerthree></app-bannerthree>
+<app-footer></app-footer>

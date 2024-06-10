@@ -1,0 +1,44 @@
+<h1 class="text-[30px] mt-[30px]  ml-[30px] font-bold">Login </h1>
+<form [formGroup]="loginform" class="flex flex-col space-y-4 p-4" (ngSubmit)="onSubmit()">
+    <div>
+      <input 
+        type="text" 
+        placeholder="Email" 
+        formControlName="email" 
+        class="border rounded p-2 w-full"
+      />
+      <span 
+        *ngIf="!loginform.controls.email.valid && (loginform.controls.email.dirty || loginform.controls.email.touched)" 
+        class="text-red-500 text-sm mt-1"
+      >
+        Sai định dạng email
+      </span>
+    </div>
+  
+    <div>
+      <input 
+        type="password" 
+        placeholder="Mật khẩu" 
+        formControlName="password" 
+        class="border rounded p-2 w-full"
+      />
+      <span 
+        *ngIf="!loginform.controls.password.valid && (loginform.controls.password.dirty || loginform.controls.password.touched)" 
+        class="text-red-500 text-sm mt-1"
+      >
+        Mật khẩu không nhỏ hơn 8 kí tự
+      </span>
+    </div>
+  
+    <button 
+      type="submit" 
+      [disabled]="!loginform.valid" 
+      class="bg-blue-600 text-white p-2 rounded mt-4 disabled:opacity-50 font-bold"
+    >
+      Submit
+    </button>
+  </form>
+  
+  <div class="flex ">
+    <h1 class="mx-auto">Bạn chưa có tài khoản ? <a href="" class="text-blue-500 underline" routerLink="/register">Register</a></h1>
+  </div>

@@ -1,0 +1,179 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Fashion"
+    },
+    {
+      "id": 2,
+      "name": "Jewelry"
+    },
+    {
+      "id": 3,
+      "name": "Accessories"
+    },
+    {
+      "id": 4,
+      "name": "Electronics"
+    },
+    {
+      "name": "iphone",
+      "id": 5
+    },
+    {
+      "name": "Samsung",
+      "id": 6
+    },
+    {
+      "name": "wwwwwa",
+      "id": 7
+    },
+    {
+      "name": "vivoooo",
+      "id": 8
+    },
+    {
+      "name": "opppo0",
+      "id": 9
+    }
+  ],
+  "products": [
+    {
+      "name": "phat nguyễndsdsd",
+      "category": "Fashion",
+      "price": 200000,
+      "desc": "ko",
+      "image": "dsdsds",
+      "id": 12
+    },
+    {
+      "name": "sản phẩm 342",
+      "image": "https://th.bing.com/th/id/OIP.-bpTC6jNQ0IrSPUxtFVGsAHaHa?w=164&h=180&c=7&r=0&o=5&pid=1.7",
+      "cat_id": "2",
+      "price": 123333333,
+      "id": 13
+    },
+    {
+      "name": "sản phẩm  23",
+      "image": "https://th.bing.com/th/id/OIP.4-gqKeCIxFtrH34zrGvKeAHaHa?w=155&h=180&c=7&r=0&o=5&pid=1.7",
+      "cat_id": "2",
+      "price": 1000222,
+      "id": 14
+    },
+    {
+      "name": "xiaomi ",
+      "image": "https://th.bing.com/th/id/OIP.XUj29vl6qKNhhlQI7SWZ4wHaHa?w=179&h=180&c=7&r=0&o=5&pid=1.7",
+      "cat_id": "2",
+      "price": 240000,
+      "id": 19
+    },
+    {
+      "name": "màu vàng",
+      "category": "Fashion",
+      "price": 10000000000000000000,
+      "desc": "ko",
+      "image": "dsdsds",
+      "id": 20
+    },
+    {
+      "name": "fdfdffsđ",
+      "category": "Accessories",
+      "price": 1000000,
+      "desc": "dsdsds",
+      "image": "dsdsdsdsd",
+      "id": 21
+    },
+    {
+      "name": "sdssd",
+      "category": "Fashion",
+      "price": 10000000000,
+      "desc": " 28990000",
+      "image": "dsdsds",
+      "id": "_3ebcdftgr"
+    },
+    {
+      "name": "vvvvvvvvv",
+      "category": "Samsung",
+      "price": 2323232,
+      "desc": " 25990000",
+      "image": "sdsdsd",
+      "id": "_k2w7xygpu"
+    },
+    {
+      "name": "màu đen",
+      "category": "opppo0",
+      "price": 1000000,
+      "desc": "10000000000000000000",
+      "image": "dsdsds",
+      "id": "_3arwzm817"
+    }
+  ],
+  "users": [
+    {
+      "email": "angocit@gmail.com",
+      "password": "$2a$10$heE/ioj5g/b2zZVL8jCd9upbJpl.rMXQUlcqB8R4fxP5C/ISPJxmq",
+      "name": "Ngọc",
+      "id": 1
+    },
+    {
+      "email": "ngocnv34@fe.edu.vn",
+      "password": "$2a$10$/WcOiq/C8.tX7hvV6ayOte2HB77ZRj8NOE7PPj092nbN8yHmn4Oz.",
+      "name": "Ngọc",
+      "id": 2
+    },
+    {
+      "name": "long22222",
+      "email": "longnhph37814@fpt.edu.vn",
+      "password": "11111111",
+      "id": 3
+    },
+    {
+      "name": "long thanh hóa",
+      "email": "long123@gmail.com",
+      "password": "11111111",
+      "id": 4
+    },
+    {
+      "name": "long chín ngón",
+      "email": "long1213@gmail.com",
+      "password": "11111111",
+      "id": 14
+    },
+    {
+      "email": "long111@gmail.com",
+      "password": "$2a$10$QLP.hTAba.XyquDUpf4mpOrwEQ6vPH/AuwlhKY5AyJzmkfxYVl.dq",
+      "name": "nguyễn hữu long",
+      "id": 15
+    },
+    {
+      "email": "long222@gmail.com",
+      "password": "$2a$10$AdpdJ67a4XfnsLfgyDpd2.8QobOJV2Z5sPBsqIhnurRwW9BfIw93S",
+      "name": "nguyễn hữu long",
+      "id": 16
+    },
+    {
+      "email": "longggg@gmail.com",
+      "password": "$2a$10$wIDJBgBR8CHhWtppOH9f5.h/J3spx61Rr.tGacTzLId3T.IUL6uiC",
+      "name": "nguyễn hữu long",
+      "id": 17
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "$2a$10$eiVNEyQgqkyWV.agxtDjUO3XyiI8xnIlm6NnlKJqgpoAvt7PH/aRm",
+      "name": "phat nguyễn",
+      "id": 18
+    },
+    {
+      "email": "admin1223@gmail.com",
+      "password": "$2a$10$b12u5sgn1KgDKTZfLNeMEeQqaF7lTORmjJEXfd2V5eZVTy59rsd.S",
+      "name": "phat nguyễn",
+      "id": 19
+    },
+    {
+      "email": "admin122355@gmail.com",
+      "password": "$2a$10$5Cw17/kstq1mTmZshNaLBOhKE3fcSpxfWs7/k8TWOuRD1xaytDwZe",
+      "name": "phat nguyễn",
+      "id": 20
+    }
+  ]
+}
